@@ -1,8 +1,7 @@
 terraform {
   cloud {
-    organization = "<MY-ORG>"
+    organization = "kane-org"
     hostname     = "app.terraform.io" # default
-
     workspaces {
       name = "terraform-aws-github-action"
     }
@@ -19,8 +18,8 @@ provider "aws" {
   region = var.region
   default_tags {
     tags = {
-      Project = "Coffee-Mug-Cake"
-      Owner   = "jerry & tom"
+      Project = "github-actions"
+      Owner   = "kane"
     }
   }
 }
